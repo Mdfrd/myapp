@@ -1,37 +1,33 @@
 const addNumbers = (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let sum = number1 + number2
-    console.log(sum)
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let result = num1 + num2
     res.status(200)
-    res.json({ result: sum })
+    res.json({ result })
 }
 
 const subtractNumbers = (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let sum = number1 - number2
-    console.log(sum)
-    res.status(300)
-    res.json({ result: subtract })
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let result = num1 - num2
+    res.status(200)
+    res.json({ result })
 }
 
 const multiplyNumbers = (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let sum = number1 * number2
-    console.log(multiply)
-    res.status(400)
-    res.json({ result: multiply })
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let result = num1 * num2
+    res.status(200)
+    res.json({ result })
 }
 
 const divideNumbers = (req, res) => {
-    let number1 = parseInt(req.query.num1);
-    let number2 = parseInt(req.query.num2);
-    let sum = number1 / number2
-    console.log(sum)
-    res.status(500)
-    res.json({ result: divide })
+    let num1 = parseInt(req.query.num1);
+    let num2 = parseInt(req.query.num2);
+    let result = num1 / num2
+    res.status(200)
+    res.json({ result })
 }
 
 module.exports = {
